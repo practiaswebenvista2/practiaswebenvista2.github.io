@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--TÍTULO DE LA WEB-->
+    <title>Sergio López Álvarez - Desarrollador Web Frontend en Asturias</title>
+
+    <!--METADOS-->
+    <meta name="description" content="Desarrollador Web Frontend Developer en Gijón Asturias - Sergio López Álvarez">
+    <meta name="keywords" content="desarrollador web, Desarrollador Web, frontend developer, Frontend Developer, Gijón, Asturias, Sergio López Álvarez"/>
+    <meta name="author" content="Sergio López Álvarez" />
+    <meta name="copyright" content="Sergio López Álvarez" />
+
+    <!--ESTILOS-->
+    <link rel="stylesheet" href="CSS/estilos.css">
+
+    <!--JAVASCRIPT-->
+    <script src="JAVACRIPT/script.js"></script>
+
+    <!-----------------GOOGLE FONTS----------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap');
+    </style>
+
+    <!-----------------FONT AWESOME----------------->
+    <link rel="stylesheet" href="FONT-AWESOME/css/all.css">
+    <link rel="stylesheet" href="FONT-AWESOME/css/sharp-regular.css">
+    <link rel="stylesheet" href="FONT-AWESOME/css/sharp-solid.css">
+ 
+
+
+</head>
+<body>
+        <!--VIDEO Y FONDO NEGRO-->
+        <header>
+            <video preload="auto" id="video" src="VIDEOS/liquid3.mp4" autoplay muted loop></video>
+        <div class="fondo-negro"></div>
+
+
+        <div class="menu-ham">
+
+            <label for="menu-ham_2">
+                <i id="menu-ham_boton" onclick="cambiarIcono(this)" class="fa-solid fa-bars fa-2x"></i>
+            </label>
+        
+            <input type="checkbox" id="menu-ham_2" />
+        
+            <ul id="menu-ham_nav">
+                    <li><a href="#entra">HOME</a></li>
+                    <li><a href="#">PROYECTOS</a></li>
+                    <li><a href="#">APTITUDES</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                    <li><a href="#">SOBRE MÍ</a></li>
+
+                    <li><hr></li>
+                
+                    <li>
+                        <i class="fa-brands fa-whatsapp fa-2x"></i>
+                        <i class="fa-brands fa-github-alt fa-2x"></i>
+                        <i class="fa-brands fa-linkedin-in fa-2x"></i>
+                    </li>
+                </ul>
+        </div>
+        
+
+
+       
+            <div class="header-main">
+                
+                <div class="header-main_img"><!--FOTO CV HEADER-->
+                        <img id="fotocv" src="IMAGENES/fotocv3.webp" alt="Sergio López Álvarez"/>
+                        
+                    <img id="fotocv2" src="IMAGENES/fotocv3.webp" alt="Sergio López Álvarez"/>
+                </div>
+
+                <div class="header-main_info"> <!--INFO DE PERFIL HEADER-->
+                        <div class="header-main_info_titulo"> <!--NOMBRE Y PUESTO HEADER-->
+                                <h1>¡HOLA! SOY SERGIO LÓPEZ</h1>
+                                <h2>Me dedico al Desarrollo Frontend y maquetación de sitios web con distintas tecnologías, así como al posicionamiento SEO y optimización de las aplicaciones</h2>
+                        </div>
+
+                        <div class="header-main_info_descripcion">
+                            <a href="#ventanaHTML" alt="Ventana de HTML">
+                                <i class="fa-brands fa-html5 fa-6x"></i>
+                            </a>
+                    
+                            <a href="#ventanaCSS" alt="Ventana de CSS3">
+                                <i class="fa-brands fa-css3-alt fa-6x"></i>
+                            </a>
+                    
+                            <a href="#ventanaJS" alt="Ventana de JS">
+                                <i class="fa-brands fa-js fa-6x"></i>
+                            </a>
+                    
+                            <a href="#ventanaBoot" alt="Ventana de Bootstrap">
+                                <i class="fa-brands fa-bootstrap fa-6x"></i>
+                            </a>
+
+                                                
+                            <a href="#ventanaGit" alt="Ventana de GitHub">
+                                <i class="fa-brands fa-github-alt fa-6x"></i>
+                            </a>
+                    
+                            <a href="#ventanaWP" alt="Ventana de Wordpress">
+                                <i class="fa-brands fa-wordpress-simple fa-6x"></i>
+                            </a>
+                    
+                            <a href="#ventanaElementor" alt="Ventana de Elementor">
+                                <i class="fa-brands fa-elementor fa-6x"></i>
+                            </a>
+                    
+                        </div>
+
+                            <ul class="fotos-datos_info_menu-header">
+                                    <li id="menu-header-proy">
+                                            <a href="#proyectos" alt="Ir Proyectos">PROYECTOS&nbsp;<i class="fa-sharp fa-solid fa-code"></i></a>
+                                    </li>
+
+                                    <li id="menu-header-sobremi">
+                                        <a href="#contacto-footer" alt="Ir Contacto">SOBRE MÍ&nbsp;<i class="fa-solid fa-circle-info"></i></a>
+                                    </li>
+                                
+                                    <li id="menu-header-cont">
+                                            <a href="#contacto-footer" alt="Ir Contacto">CONTÁCTAME&nbsp;<i class="fa-solid fa-paper-plane"></i></a>
+                                    </li>
+
+    
+
+                            </ul>
+
+                            <div class="header-main_info_descripcion2">
+                                    <p><i class="fa-solid fa-badge-check"></i>&nbsp;&nbsp;Desarrollo y Maquetación Web</p>
+                                    <p><i class="fa-solid fa-badge-check"></i>&nbsp;&nbsp;HTML5 - CSS3 - JavaScript - SEO</p>
+                                    <p><i class="fa-solid fa-badge-check"></i>&nbsp;&nbsp;Wordpress - Canva - Figma</p>
+                            </div>
+                    </div>
+        
+            </div>
+        </header>
+
+        <!-----STICKY NAV----->
+        <nav class="sticky-nav">
+            
+            <a href="#header" alt="Ir a Home">Home - Sergio López</a>
+            <p>|</p>
+            <a href="#proyectos" alt="Ir a proyectos">Proyectos</a>
+            <a href="#aptitudes" alt="Ir a aptitudes">Aptitudes</a>
+            <a href="#cv" alt="Ir a CV">CV</a>
+            <a href="#contacto-footer" alt="Ir a contacto">Contacto</a>
+            <a href="#contacto" alt="Ir a Sobre Mí">Sobre mí</a>
+        </nav>
+        <!-----FIN STICKY NAV----->
+
+        <section>
+            <article class="article-1">
+                    <div class="divCentrar">
+                            <h3 id="frase">«La idea no es vivir para siempre, es crear algo que sí lo haga»</h3> <!--Eslogan-->
+                    </div>
+
+                    <div class="article-1_boxes"> <!--CAJAS CON COMPETENCIAS-->
+                            <div class="article-1_box1">
+                                    <i class="fa-light fa-display-code fa-3x"></i>
+                                    <h2>Maquetación Web</h2>
+                            </div>
+
+                            <div class="article-1_box2">
+                                    <i class="fa-regular fa-mobile-notch fa-3x"></i>
+                                    <h2>Desarrollo responsive</h2>
+                            </div>
+
+                            <div  class="article-1_box3">
+                                    <i class="fa-light fa-gauge-high fa-3x"></i>
+                                    <h2>Posicionamiento y Optimización</h2>
+                            </div>
+                    </div>
+
+                                        <p><i class="fa-solid fa-circle-check"></i>&nbsp;&nbsp;Diseño Web con dominio de HTML5, CSS3 y Bootstrap 5</p>
+                                        <p><i class="fa-solid fa-circle-check"></i>&nbsp;&nbsp;Desarrollo Web Frontend con JavaScript</p>
+                                        <p><i class="fa-solid fa-circle-check"></i>&nbsp;&nbsp;Posicionamiento Web SEO y Optimización</p>
+                                        <p><i class="fa-solid fa-circle-check"></i>&nbsp;&nbsp;Wordpress (Elementor, WooCommerce y Bakery) y Blogger</p>
+                                        <p><i class="fa-solid fa-circle-check"></i>&nbsp;&nbsp;Herramientas complementarias como Canva, Figma o Photoshop</p>
+              
+            </article>
+
+        </section>
+
+
+
+
+
+    
+</body>
+</html>
