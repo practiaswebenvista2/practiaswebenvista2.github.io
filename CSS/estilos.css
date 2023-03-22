@@ -9,15 +9,12 @@ html,body,*{
     padding:0;
 
     box-sizing:border-box;
-
-
     
 }
 
-
 h1{
   font-size:64px;
-  font-weight:500;
+  font-weight:600;
 }
 h2{
   font-size:28px;
@@ -44,8 +41,8 @@ a{
 
 #menu-ham_boton {
   position:fixed;
-  top:6px;
-  left:40px;
+  top:1%;
+  left:3%;
 
   display: block;
   color:white;
@@ -73,7 +70,7 @@ label {
   background-color:rgb(23,23,23);
 
   width:30%;
-  height:80vh;
+  height:90vh;
 
   z-index:6;
 
@@ -83,13 +80,16 @@ label {
 }
 
 #menu-ham_nav li{
+  width:100%;
   font-size:28px;
   margin:40px 0;
   list-style-type: none;
 }
 
 #menu-ham_nav li a {
-  padding: 30px 0;
+  display:inline-block;
+  width:100%;
+  padding: 0;
   color: white;
 }
 
@@ -202,10 +202,7 @@ header{
   .header-main_info_descripcion .fa-wordpress-simple{
     color:#009BCB;
   }
-  
-  .header-main_info_descripcion .fa-elementor{
-    color:#8D0039;
-  }
+
   
   .header-main_info_descripcion .fa-github-alt{
     color:white;
@@ -233,7 +230,7 @@ header{
   }
 
   .header-main_info_titulo h2{
-    color:gray;
+    color:rgb(199, 199, 199);
   }
 
   
@@ -277,10 +274,6 @@ header{
   #menu-header-cont{
     background-color:#66022a;
   }
-
-  /*#menu-header-cont{
-    background-color:#66022a;
-  }*/
   
   
   .fotos-datos_info_menu-header li::after {
@@ -293,7 +286,7 @@ header{
     left: 10px;
     background-color: white;
     transform-origin: bottom right;
-    transition: transform 0.5s ease-in;
+    transition: transform 0.3s ease-in-out;
   }
   
   .fotos-datos_info_menu-header li:hover::after {
@@ -428,67 +421,79 @@ header{
     justify-content: start;
 
     width:100%; /*fijo*/
-    padding:5%; /*fijo*/
+    height:100vh;
+    padding:4%; /*fijo*/
 
     text-align:center;
 
     background-color: rgb(11, 11, 11);
-    
   }
 
+  /*ESLOGAN*/
   #frase{
     font-size:46px;
   }
 
+  /*CAJA GRANDE*/
   .article-1_boxes{
     display:flex;
     flex-direction: row;
-    justify-content: center;
-    flex-wrap:wrap;
+    justify-content: space-around;
+
+    width:100%;
+    height:80vh;
+    margin:auto;
   }
 
-.article-1 .article-1_boxes > div{
-  display:flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  /*CAJAS QUE INCLUYEN DIV DE COLOR + DESCRIPCION*/
+  .article-1_ap1,.article-1_ap2,.article-1_ap3{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
 
-  padding:30px;
-  margin:30px;
+    width:30%;
+    height:100%;
+
+  }
+
+    /*DIV DE COLOR*/
+  .article-1_box1,.article-1_box2,.article-1_box3
+  {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    height:40vh;
+    width:100%;
   
-  width:380px;
-  height:300px;
-  border-radius:10px;
+    cursor:pointer;
+    
+    transform:scale(1);
+    transition: ease-in-out;
+    transition-duration: 200ms;
+  }
 
-  cursor:pointer;
-
-  transform:scale(1);
-  transition: ease-in-out;
-  transition-duration: 200ms;
+  .article-1_box1:hover,.article-1_box2:hover,.article-1_box3:hover
+  {
+    transform:scale(1.05);
+    transition: ease-in-out;
+    transition-duration: 400ms;
+  }
   
-}
 
-.article-1 .article-1_boxes > div:hover{
-  transform:scale(1.05);
-  transition: ease-in-out;
-  transition-duration: 400ms;
-}
+  /*COLORES DE LOS DIV*/
+  .article-1_box1{
+      background-color:rgb(245, 122, 6);
+  }
 
-.article-1_box1{
-  background-color:rgb(245, 122, 6);
-}
+  .article-1_box2{
+    background-color:rgb(0, 114, 185);
+  }
 
-.article-1_box2{
-  background-color:rgb(0, 114, 185);
-}
-
-.article-1_box3{
-  background-color:rgb(158, 0, 29);
-}
-
-.article-1 .article-1_boxes > div h2{
-  text-align:center;
-}
+  .article-1_box3{
+    background-color:rgb(158, 0, 29);
+  }
 
 
 
@@ -497,7 +502,6 @@ header{
 
 /*******ARTICLE2******/
 /*CARRUSEL*/
-
 
 .container{
   width:60%;
@@ -558,7 +562,7 @@ header{
 
 @media (max-device-width: 767px) 
 {
-  
+  /******ESTILSO GLOBALES******/
 h1{
   font-size:24px;
   font-weight:500;
@@ -568,6 +572,208 @@ h2{
   font-weight:400;
 } 
 
+/**HAMBURGUESA**/
+#menu-ham_nav {
+  position:fixed;
+  top:1%;
+  left:1%;
 
+  text-align: center;
+  padding:30px;
+  background-color:rgb(23,23,23);
+
+  width:70%;
+  height:75vh;
+}
+#menu-ham_nav li{
+  margin:0px;
+  font-size:36px;
+  margin-bottom:20px;
+}
+
+#menu-ham_nav li:last-child i{
+  font-size:1em;
+}
+
+#menu-ham_nav li a{
+  font-size:0.8em;
+
+}
+/**MARGIN TOP DEL HEADER MAIN, FONT SIZE Y HEIGHT FOTOCV*/
+
+
+/*******HEADER**********/
+  
+/*CAJA GRANDE HEADER*/
+.header-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  padding:2%;
+}
+
+.header-main_info{ /*caja con foto + descripcion*/
+  height:100%;
+  width:100%;
+  padding:0;
+  margin:0;
+}
+
+.header-main_info_descripcion { /*descripcion*/
+  font-size:0.5em;
+  width: 100%;
+  margin-top:50px;
+}
+
+#fotocv{
+  height:300px;
+}
+
+#menu-ham_boton {
+  position:fixed;
+  top:1%;
+  left:2%;
+}
+.fotos-datos_info_menu-header li {   /*BOTONES MENU NAV*/
+  font-size:1rem;
+  padding: 10px 15px;
+
+}
+
+
+/**********ARTICLE 1************/
+.article-1{
+  height:150vh;
+}
+
+.article-1 h2{
+  font-size:24px;
+}
+
+.article-1 p{
+  font-size:14px;
+}
+
+#frase{
+  font-size:28px;
+  margin:10% 0;
+}
+
+.article-1_boxes{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+
+  height:150vh;
+}
+
+.article-1_ap1,.article-1_ap2,.article-1_ap3{
+  width:100%;
+  justify-content: start;
+}
+
+   /*DIV DE COLOR*/
+   .article-1_box1,.article-1_box2,.article-1_box3
+   {
+ 
+     height:25vh;
+     width:100%;
+
+     margin-bottom:10px;
+   
+     cursor:pointer;
+     
+     transform:scale(1);
+     transition: ease-in-out;
+     transition-duration: 200ms;
+   }
+
+}
+
+@media (max-device-width: 414px) 
+{
+  h1{
+    font-size:36px;
+  }
+
+  /*h2{
+    font-size:;
+  }
+
+  .header-main{
+    margin-top:;
+  }*/
+
+  #fotocv{
+    height:400px;
+    margin-left:10%;
+  }
+
+
+}
+
+@media (max-device-width: 395px) 
+{
+  #fotocv{
+    height:350px;
+    margin-left:10%;
+  }
+
+
+}
+
+@media (max-device-width: 380px) 
+{
+  h1{
+    font-size:28px;
+  }
+
+  h2{
+    font-size:14px;
+  }
+
+  .header-main{
+    margin-top:20px;
+  }
+  .fotos-datos_info_menu-header {   /*BOTONES HEADER (LINKEDIN, CV Y GITHUB)*/
+    margin-top:20px;
+  }
+
+  .header-main_info_descripcion {
+    margin-top:20px;
+  }
+
+  #fotocv{
+    height:340px;
+    margin-left:12%;
+  }
+
+  .article-1_ap1,.article-1_ap2,.article-1_ap3{
+    margin-bottom:30px;
+
+  }
+
+  /**HAMBURGUESA**/
+#menu-ham_nav li{
+  font-size:28px;
+  margin-bottom:15px;
+}
+
+}
+
+@media (max-device-width: 320px) 
+{
+
+  .fotos-datos_info_menu-header li {   /*BOTONES MENU NAV*/
+    font-size:0.8rem;
+  
+    padding: 10px 10px;
+  }
+
+  #fotocv{
+    height:300px;
+  }
 
 }
