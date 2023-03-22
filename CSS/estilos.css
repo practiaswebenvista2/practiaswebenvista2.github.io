@@ -12,6 +12,10 @@ html,body,*{
     
 }
 
+html,body{
+  min-width:320px;
+}
+
 h1{
   font-size:64px;
   font-weight:600;
@@ -603,7 +607,9 @@ h2{
 
 
 /*******HEADER**********/
-  
+header{
+  position:relative;
+}
 /*CAJA GRANDE HEADER*/
 .header-main {
   display: flex;
@@ -628,7 +634,13 @@ h2{
 }
 
 #fotocv{
-  height:300px;
+  position:absolute;
+  bottom:0;
+  margin-bottom:0;
+  padding-bottom:0;
+
+  height:55%;
+  margin-right:0;
 }
 
 #menu-ham_boton {
@@ -704,8 +716,8 @@ h2{
 
 
   #fotocv{
-    height:300px;
-    margin-left:15%;
+    height:60%;
+    margin-right:0;
   }
 
 
@@ -714,8 +726,8 @@ h2{
 @media (max-device-width: 395px) 
 {
   #fotocv{
-    height:350px;
-    margin-left:10%;
+    height:60%;
+    margin-right:0;
   }
 
   .header-main_info_descripcion {
@@ -750,7 +762,7 @@ h2{
   }
 
   #fotocv{
-    height:340px;
+    height:55%;
     margin-left:12%;
   }
 
@@ -767,7 +779,7 @@ h2{
 
 }
 
-@media (max-device-width: 358px) 
+@media (max-device-width: 365px) 
 {
 
   .fotos-datos_info_menu-header li {   /*BOTONES MENU NAV*/
@@ -777,7 +789,8 @@ h2{
   }
 
   #fotocv{
-    height:300px;
+    height:50%;
+    margin-left:0;
   }
 
 }
