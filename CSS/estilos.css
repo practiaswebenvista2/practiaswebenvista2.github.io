@@ -695,20 +695,17 @@ h2{
 @media (max-device-width: 414px) 
 {
   h1{
-    font-size:36px;
+    font-size:28px;
   }
 
-  /*h2{
-    font-size:;
+  h2{
+    font-size:16px;
   }
 
-  .header-main{
-    margin-top:;
-  }*/
 
   #fotocv{
-    height:400px;
-    margin-left:10%;
+    height:300px;
+    margin-left:15%;
   }
 
 
@@ -719,6 +716,13 @@ h2{
   #fotocv{
     height:350px;
     margin-left:10%;
+  }
+
+  .header-main_info_descripcion {
+    margin-top:20px;
+  }
+  .fotos-datos_info_menu-header {   /*BOTONES HEADER (LINKEDIN, CV Y GITHUB)*/
+    margin-top:20px;
   }
 
 
@@ -763,7 +767,7 @@ h2{
 
 }
 
-@media (max-device-width: 320px) 
+@media (max-device-width: 358px) 
 {
 
   .fotos-datos_info_menu-header li {   /*BOTONES MENU NAV*/
