@@ -716,7 +716,7 @@ header{
 
 
   #fotocv{
-    height:60%;
+    height:55%;
     margin-right:0;
   }
 
@@ -726,7 +726,7 @@ header{
 @media (max-device-width: 395px) 
 {
   #fotocv{
-    height:60%;
+    height:55%;
     margin-right:0;
   }
 
@@ -789,7 +789,7 @@ header{
   }
 
   #fotocv{
-    height:50%;
+    height:55%;
     margin-left:0;
   }
 
