@@ -347,6 +347,8 @@ header{
 
 
 /*****STICKY NAV*****/
+
+
 .sticky-nav{
     position:fixed;
     top:0;
@@ -368,20 +370,20 @@ header{
 
   }
   
-  .sticky-nav i{
-    position:fixed;
-    top:7px;
-    left:50px;
+  .sticky-nav > i{
+    display:none;
+  }
+ 
 
-    cursor:pointer;
-
-    z-index:99;
+  .sticky-nav a{
+    font-weight:500;
   }
 
   .sticky-nav a::after{
     content:"";
     height:1.5px;
     width:0;
+
     background-color:white;
     display:block;
     
@@ -576,6 +578,33 @@ h2{
   font-weight:400;
 } 
 
+/*STICKY NAV*/
+.sticky-nav{
+  text-align:center;
+}
+
+.sticky-nav > a,.sticky-nav span{
+  display:none;
+}
+.sticky-nav i{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  margin-right:15px;
+}
+
+/*AJUSTE DEL NOMBRE*/
+.sticky-nav p{
+  min-width:200px;
+  margin-left:-120px;
+  font-size:15px;
+}
+
+
+
+
+
 /**HAMBURGUESA**/
 #menu-ham_nav {
   position:fixed;
@@ -732,10 +761,10 @@ header{
   }
 
   .header-main_info_descripcion {
-    margin-top:40px;
+    margin-top:30px;
   }
   .fotos-datos_info_menu-header {   /*BOTONES HEADER (LINKEDIN, CV Y GITHUB)*/
-    margin-top:40px;
+    margin-top:30px;
   }
 
 
