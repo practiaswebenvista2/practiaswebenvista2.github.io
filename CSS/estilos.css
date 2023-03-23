@@ -3,6 +3,7 @@ html,body,*{
     font-weight: 200;
     
     color:white;
+
  
     max-width:100%;
     margin:0;
@@ -14,6 +15,10 @@ html,body,*{
 
 html,body{
   min-width:320px;
+}
+
+body{
+  background-color:white!important;
 }
 
 h1{
@@ -511,61 +516,223 @@ header{
 
 
 /*******ARTICLE2******/
-/*CARRUSEL*/
-
-.container{
-  width:60%;
-  overflow:hidden;
-  cursor:pointer;
+.article-2{
+  height:120vh;
+  background: rgb(44,83,100);
+  background: radial-gradient(circle, rgb(101, 155, 176) 0%, rgb(41, 71, 82) 65%, rgb(13, 33, 41) 95%);
+  /*
+  background: rgb(146,190,170);
+background: radial-gradient(circle, rgba(146,190,170,1) 0%, rgba(3,3,42,1) 100%);*/
 }
-.wrapper{
+
+/*Banner article 2*/
+/*
+.article-2_banner{
+  position:relative;
   width:100%;
-  display:flex;
-  animation:slide 20s infinite;
-  animation-timing-function: ease-in-out;
-  
+  height:40vh;
 }
 
-@keyframes slide{
+.article-2_banner h3{
+  font-size:2em;
+}
+
+.article-2 .fondo-negro-2{
+  position:absolute;
+  bottom:0;
+
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+  width:100%;
+  height:40vh;
+
+  opacity:0.8;
+
+  background-color:black;
+  z-index:1;
+}
+
+.article-2 .banner-1{
+  position:absolute;
+  top:0;
+  width:100%;
+  height:40vh;
+}
+
+.article-2 .banner-1 img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}*/
+/*Fin banner article 2*/
+
+
+
+
+
+/*Carrusel de imágenes*/
+
+.article-2_carrusel{
+  height:40vh;
+  padding:10% 5%;
+
+}
+
+
+.carrusel{
+  position:relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color:rgb(11,11,11);
+  border-radius:5px;
+
+  width:83%;
+
+  margin:auto;
+  overflow: hidden;
+
+}
+
+
+
+
+
+.carrusel-titulo{
+  position:absolute;
+  text-align: center;
+  
+  color:white;
+  font-size:36px;
+
+  opacity:1;
+  transition:400ms ease-in-out;
+}
+
+.carrusel:hover .carrusel-titulo
+{
+  opacity:1;
+  transition:800ms ease-in-out;
+}
+
+.carrusel-p{
+  width:40%;
+  margin:auto;
+  background-color:#0b6023;
+
+  color:white;
+  font-size:14px;
+  font-weight:500;
+
+  padding:5px 15px;
+  opacity:1;
+}
+
+
+
+
+/*Para que desaparezca el titulo al hacer hover y salga el titulo-1*/
+.carrusel:hover .carrusel-titulo-2{
+  opacity:0;
+  transition:500ms ease-in-out;
+}
+
+.carrusel-titulo-2{
+  position:absolute;
+  bottom: 0;
+  left:0;
+
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+  width:100%;
+  height:50px;
+
+  background-color:black;
+
+  z-index:1;
+
+  opacity:0.8;
+
+  transition:1000ms ease-in-out;
+}
+
+.carrusel-titulo-2 h3{
+  font-size:24px;
+}
+/*Fin titulo-2*/
+
+
+
+.carrusel-imagenes{
+  position:relative;
+  display: flex;
+
+  transition:400ms ease-in-out;
+  animation: animacion1 20s infinite;
+}
+
+.carrusel-imagenes:hover{
+    opacity:0.2;
+    transition:800ms ease-in-out;
+}
+
+
+
+.carrusel-imagenes img{
+  width: 100%;
+
+  cursor:pointer;
+  transform: scale(1);
+  transition:400ms ease-in-out;
+}
+
+.carrusel-imagenes img:hover{
+
+  transform: scale(1.15);
+  transition:700ms ease-in-out;
+}
+
+
+
+
+
+
+@keyframes animacion1{
   0%{
-    transform:translateX(0);
+      transform: translateX(0);
   }
   25%{
-    transform:translateX(0);
+      transform: translateX(0);
   }
   30%{
-    transform:translateX(-100%);
+      transform: translateX(-100%);
   }
   50%{
-    transform:translateX(-100%);
+      transform: translateX(-100%);
   }
   55%{
-    transform:translateX(-200%);
+      transform: translateX(-200%);
   }
   75%{
-    transform:translateX(-200%);
+      transform: translateX(-200%);
   }
   80%{
-    transform:translateX(-300%);
+      transform: translateX(-300%);
   }
   100%{
-    transform:translateX(-300%);
+      transform: translateX(-300%);
   }
 }
+/*Fin carrusel de imaágenes*/
 
-.wrapper img{
-  width:100%;
-  padding:1px;
-  background-color:gray;
-  box-sizing: border-box;
 
-  transition:ease-in-out 500ms;
-}
 
-.wrapper img:hover{
-  transform:scale(1.1);
-  transition:ease-in-out 500ms;
-}
+
 
 
 
@@ -736,6 +903,38 @@ header{
      transition-duration: 200ms;
    }
 
+   /*ARTICLE 2*/
+   .article-2{
+    height:50vh;
+   }
+
+   .article-2_carrusel{
+    padding:20% 0;
+   }
+
+   .carrusel{
+    width:100%;
+    border-radius:0px;
+   }
+
+   .carrusel-titulo{
+      font-size:22px;
+  }
+
+   .carrusel-titulo-2{
+      height:20px;
+   }
+
+   .carrusel-titulo-2 h3{
+    font-size:12px;
+   }
+
+   
+.carrusel-p{
+  font-size:10px;
+
+  padding:2px 10px;
+}
 }
 
 @media (max-device-width: 414px) 
