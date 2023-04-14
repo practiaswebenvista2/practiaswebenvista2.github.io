@@ -15,6 +15,7 @@
 .fa-whatsapp:before {
     content: "\f232"
 }
+.fa-square-whatsapp:before,.fa-whatsapp-square:before{content:"\f40c"}
 
 .fa-square-twitter:before,
 .fa-twitter-square:before {
@@ -77,9 +78,23 @@
 
 .fa-download:before{content:"\f019"}
 
+.fa-rocket-launch:before{content:"\e027"}
 
+.fa-diagram-project:before,.fa-project-diagram:before{content:"\f542"}
 
+.fa-user-graduate:before{content:"\f501"}
 
+.fa-rectangle-code:before{content:"\e322"}
+
+.fa-address-card:before,.fa-contact-card:before,.fa-vcard:before{content:"\f2bb"}
+
+.fa-circle-plus:before,.fa-plus-circle:before{content:"\f055"}
+
+.fa-at:before{content:"\40"}
+
+.fa-phone-arrow-up-right:before,.fa-phone-arrow-up:before,.fa-phone-outgoing:before{content:"\e224"}
+
+.fa-github:before{content:"\f09b"}
 
 /*!
  * Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com
