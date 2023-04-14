@@ -1,5 +1,6 @@
 html,body,*{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family:'Poppins','sans-serif';
+    /*font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
     font-weight: 200;
  
     max-width:100%;
@@ -383,8 +384,8 @@ header{
 
   /****SECTION******/
   section{
-    /*background-color:#0a1a58;*/
-    background-color:rgb(96, 63, 6);
+    background-color:#0a1a58;
+    /*background-color:rgb(96, 63, 6);*/
   }
   /*ARTICLE 1 PRESENTACIÓN*/
   .article-1{
